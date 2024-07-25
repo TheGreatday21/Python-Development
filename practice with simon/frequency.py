@@ -2,7 +2,7 @@
 
 sentence = input("Enter a sentence")
 
-word_freq = {}
+word_freq = {}#making a dictionary to store the users input 
 
 for word in sentence.split():
     if word in word_freq:

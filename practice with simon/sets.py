@@ -2,7 +2,7 @@
 set1 = {1,2,4,0,9,76}
 set2 = {67,8,0,6,4}
 print("\nThese are the sets\n")
-print(f"Set A:{set1}")
+print(f"{set1 }")
 print(f"SetB:{set2}\n\n")
 ##find intersection
 print(f"\nThis is the set intersection {set1.intersection(set2)}\n")
