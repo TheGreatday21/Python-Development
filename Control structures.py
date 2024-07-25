@@ -1,0 +1,16 @@
+#Program to ask the user their favorite color
+print('........Hello iam i max ....')
+print('I am going to ask you a few questions i hope you dont mind me asking')
+e = input("What is your name?")
+print(f"Nice to meet you {e}\n")
+print('What is your favorite color?')
+d = input()
+print(f'Good going {e} my favorite color is also {d} \n')
+
+print('Now lets do some calculations ')
+print('We are going to calculate the area of a rectangle')
+f = int(input("Input your length :"))
+g = int(input("Now input your width :"))
+print("\nand we know that Area = Length * Width")
+h = (f*g)
+print(f"therefore your area is {f} cm multiplied ny {g} cm giving us {h} centimeters squared")

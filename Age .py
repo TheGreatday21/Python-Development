@@ -1,0 +1,1 @@
+#Creating a program to calculate ade and give a genration 
