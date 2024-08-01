@@ -3,7 +3,7 @@
 #we use the random function
 import random
 #create a list
-words = ['keks', 'john', 'simon']
+words = ['pineapple', 'john', 'simon']
 word = random.choice(words)#tells python to pick any one word from the list
 print(f"\n{word}\n")#and print it out
 
@@ -18,7 +18,7 @@ print("Unscrumble the letters  to make a word ", '' .join(jumbled))
 
 #####let some one gues the word and confirm if it is correct.Give them a shot 
 guess = input("Your Guess :\n")
-for word in guess:
+for word in words:
     if guess == word:# The word that was picked initially on random.choice
         print("Correct, you got it right")
     else:
