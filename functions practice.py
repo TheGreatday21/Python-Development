@@ -1,7 +1,9 @@
 ''''
 for x in range(4):
-    print("x")
+    print("Happy birthday to me")
 print("Nice going")
+
+#calling a function inside a function
 
 def main():
     print("I have a message for you")
@@ -33,8 +35,9 @@ rec(78)
 ##having multiple arguments in a single function
 def tie(num1,num2,num3):
     sum = num1 +num2 + num3
+    print(f"The sum of the numbers is {sum}")
     average = sum/3
-    print(average)
+    print(f"There average is {average}")
 tie  (23,90,45)
    
 ##Global variables and functions
@@ -46,11 +49,14 @@ tree()
 
 ###Inorder to change a global variable inside a function, you first have to inform python about it
 name = "Afooyo Micheal"
+
 def tree():
     global name
     name = "cock zuker"
     print(f"Arent you the famous {name}")
 tree()
+name = "Afooyo Micheal"
+
 print(f"Cause i thought your actual name was {name}")
 
 ###Return statements.
@@ -59,7 +65,7 @@ def Recta(length,width):
     area = length *width
     return area
 Recta_area = Recta(23,31)
-print(f"The area of a rectangle is {Recta_area} cm^2")
+print(f"The area of a rectangle is {Recta_area} squared centimeters")
 
 ##Example 1
 def age(num1,num2):
