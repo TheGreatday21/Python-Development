@@ -26,7 +26,6 @@ if count >=5:
 else:
     print("Iam sorry to say but try again next time, \n\t...FAILED...")
 
-'''
 
 #3. Loops & Strings:
 #At Uganda Christian University, students are assigned unique IDs consisting of the prefix "UCU" followed by a number (e.g., UCU12345). 
@@ -36,7 +35,7 @@ else:
 for i in range (1,11):
     a = list((f"UCU100{i}"))
     print(a)
-
+'''
 
 
 #4. Tuples, Sets, & Dictionaries:
@@ -44,6 +43,33 @@ for i in range (1,11):
 # Create a tuple containing three faculties. For each faculty, create a set of three programs offered. 
 # Finally, create a dictionary where the keys are the faculty names and the values are the corresponding sets of programs.
 #  Write a Python program to display the programs offered in the "Faculty of Science and Technology."
+
+faculty = ("Engineering","Masscommunication","Law")
+Engineering = {"Data science", "Civil ", "Electrical"}
+Masscommunication = {"Journalism","Field work","Radio presenting"}
+Law = {"Criminal", "Land","Constitutional"}
+dee = list[Engineering,Masscommunication,Law]
+
+dictionary_one = {faculty : dee}#at this step we make the faculty values keys and the list dee values
+#these are proof the keys and values are in sync with the question
+dict_keys = dictionary_one.keys()
+print(dict_keys)
+###OR
+for key in dictionary_one.keys():
+    print(key)
+
+dict_values = dictionary_one.values()
+print(dict_values)
+#the whole dictionary is
+print(dictionary_one)
+
+
+
+
+
+
+
+
 
 
 
