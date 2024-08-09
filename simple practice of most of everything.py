@@ -146,13 +146,7 @@ print(file.read())
 
 '''
 
-static = int(input("How many hoes you gat? :"))
 
-while static > 4:
-    print("Damn.. you are one horny as mf***")
-    static = int(input("How many hoes you gat? :"))
-else:
-    print("Thank you for being a religious man")
 
 
 

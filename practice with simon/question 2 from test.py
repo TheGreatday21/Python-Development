@@ -109,7 +109,7 @@ multiplication = int(input("Input any number yuo want to get the multiplication 
 for i in range(1,multiplication+1):
     print(f"{multiplication} * {i} = {multiplication * i}")
     time.sleep(1)
-'''
+
 
 ##summation of all even numbers
 number1 = int(input("Input number : "))
@@ -121,11 +121,23 @@ for i in range(1,number1+1):
 print(f"There are {count} even numbers in your number{number1}")
 
 
+##palindromes init
+print("This program will determine wether your string is a pallindrome\n")
+dee =input("Write a string here : ")
+if dee == dee[::-1]:
+    print(f"{dee} is a pallindrome")
+else:
+    print(f"{dee} is not a pallindrome")
 
 
+##the word counter
+print("\nThis program will count how many words are in your sentence\n")
+words = input("Write in any sentence or words here : ")
+words_split = words.split()
+print(words_split)
+print(f"There are {len(words_split)} words in your sentence")
 
-
-
+'''
 
 
 
