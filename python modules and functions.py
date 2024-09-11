@@ -27,7 +27,29 @@ with open("keks.txt","r") as file:
 with open("/Users/keksmacbookair/Desktop/keks2love.docx","r") as file:
     print(file.read())
 
+
+
+##use of a for loop with a range  -- making the code delay while executing using time module
+import time
+for i in range(1,11,2):#this will print odd numbers because we told the code to skip two numbers per number
+    time.sleep(1)
+    print(i)
+
 '''
+
+####The time module
+import time
+print(time.ctime(0))#prints the time the computerss epach was first on
+#epach is when your computer thinks time begun
+##printing  time in seconds computer has been on  till current time
+print(time.time())
+
+
+##getting the current date and time
+print(time.ctime(time.time()))
+##another way 
+time_object = time.localtime()
+print(time_object)##to make this more understandable we use the time strftime
 
 
 

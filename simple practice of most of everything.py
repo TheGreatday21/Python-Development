@@ -68,7 +68,6 @@ print(g[1::2]) #start from index 1 then skip 2 values
 
 
 
-
 p = [2,3,65,8,9,63]
 d = ["opio",2,87,5,3,65]
 w = p + d
@@ -144,6 +143,15 @@ file.write(" iam sold out")
 file = open("les.py","r")
 print(file.read())
 
+###ooooorrrrrrrr
+#we use the with open function which automatically closes the file for you
+adds = "My name is Kawooma Elijah\nAnd iam officially a real nigga\n From today on, i nolonger have lugambo or lumamonga cause iam a focused nigga init "
+with open("keks.txt","w") as file:
+    file.write(f"\nThis file contains text and test text like {adds}")
+with open("keks.txt",'r')as file:
+    print(file.read())
+with open("Bro.txt","w") as file:
+    file.write("Iam a straight as Ugandan male init")   
 '''
 
 
