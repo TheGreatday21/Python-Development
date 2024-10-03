@@ -14,7 +14,8 @@ def find_first_occurrence(array,target):
         elif array[mid] < target:
             left = mid + 1
         else:
-            right = mid - 1   
+            right = mid - 1  
+
     return first_occurrence
 
 def find_last_occurrence (array, target):
@@ -38,7 +39,9 @@ def binary_search_all_occurrences(array, target):
     return list(range(first, last+1))
 
 array= [1,1,1,2,2,3,3,4,5,6,6,6,6,6,6,7,8,9]
+
 target = 3
+
 result = binary_search_all_occurrences(array, target)
 
 

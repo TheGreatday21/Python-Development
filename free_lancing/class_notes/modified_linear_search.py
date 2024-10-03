@@ -13,3 +13,8 @@ if result:
     print(f"Elements found at indices {result}")
 else:
     print("Element not found")
+
+
+
+
+
