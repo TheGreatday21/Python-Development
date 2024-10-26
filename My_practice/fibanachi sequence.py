@@ -1,5 +1,5 @@
 ''''
-Calculates the Fibonacci sequence using iteration, recursion, memoization,
+Calculates the Fibonacci sequence using iteration, recursion, memorization,
 and a simplified form of Binet's formula
 
 NOTE 1: the iterative, recursive, memoization functions are more accurate than
