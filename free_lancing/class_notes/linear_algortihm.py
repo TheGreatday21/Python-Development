@@ -4,10 +4,10 @@ def linear_search(array,target):#Array is for the elements present and the targe
 			return i
 	return -1 #standard way of saying what you looked for does not exist #
 data = [ 3,2,5,7,8,1]
-target = 8
+target = 3
 result = linear_search(data, target)
 #Putting if statements for the result we are to get
-if result !=-1:
-	print(f"the element is at index {result}")
+if result != -1:
+	print(f"The element is at index {result}")
 else:
-	print("the element was not found")
+	print("The element was not found")

@@ -38,11 +38,11 @@ def binary_search_all_occurrences(array, target):
         return []
     return list(range(first, last+1))
 
-array= [1,1,1,2,2,3,3,4,5,6,6,6,6,6,6,7,8,9]
+data = [1,1,1,2,2,3,3,4,5,6,6,6,6,6,6,7,8,9]
 
-target = 3
+hit_target = 3
 
-result = binary_search_all_occurrences(array, target)
+result = binary_search_all_occurrences(data, hit_target)
 
 
 if result:
