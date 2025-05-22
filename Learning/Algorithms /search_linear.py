@@ -4,7 +4,7 @@ def search(array,target) :
             return i
     return -1
 data = [ 2,3,5,7,8,9]
-new = 5
+new = 3
 
 result  = search(data, new)
 

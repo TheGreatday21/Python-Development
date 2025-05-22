@@ -39,7 +39,7 @@ fibonacci(20)
 '''
 
                 #TOWER OF HANOI
-
+'''
 def T_O_H(n, source_rod, final_rod, middle_rod):
 
     if n == 1: #for only the first rod being moved 
@@ -50,35 +50,33 @@ def T_O_H(n, source_rod, final_rod, middle_rod):
     print(f"Move disk {n} from rod {source_rod} to rod {final_rod}")
     T_O_H(n-1,middle_rod,final_rod ,source_rod)
 
-n = 3
+n = 4
 
 T_O_H(n, "A","B","C")
-
 '''
-''''
+
+
         #FACTORIAL OF NTH NUMBER 
 def factorial (n):
     i = 1
     
-
     while i <= n:
-        
-        i + 1
         n = n * i 
-        return n
-
+        i += 1
+        
     return -1
 
-n = 8
+n = 4
 result  = factorial(n)
-
+print(result)
+''
 if result != -1:
     print(f"Your factorial of {n}  is {result}")
 else:
     print("non operable")
 
-'''
-''''
+
+
             ##STACKS 
 
 #this is  LIFO data structure 
@@ -92,6 +90,7 @@ print(stack )
 
 
 
+'''
 
             #QUESES 
 
@@ -113,9 +112,9 @@ popped = my_queue.popleft()
 
 print(popped)
 print(my_queue)
-
 '''
-''''
+
+
             ##QUIZES
 
 #Write a Python function to calculate the sum of the first `n` natural numbers using a loop. Analyze the time complexity of your solution.  
@@ -199,7 +198,7 @@ def factorial(n):
 print(factorial(4))
 
 
-'''
+''''
 
 def bubble(nums):
     for i in range(len(nums)- 1, 0 , -1):
@@ -215,3 +214,4 @@ nums = [ 2,3,9,1,6,4]
 bubble(nums)
 
 print(nums)
+'''
