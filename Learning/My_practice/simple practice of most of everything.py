@@ -134,7 +134,7 @@ r+ = read and write
 
 file = open("gay.py","x") #this file is created in the directorycontaing this pytyhon script...
 
-file = open("les.py", "w")#This file isnt  there so python will create it then write to it
+file = open("les.py", "w")#This file bisnt  there so python will create it then write to it
 file.write("Today is a good day")#3this will write to the fileyouve just created
 file.close()#This closes your file from being edited any more
 ##since the file is closed we donot just write to itagain.. this tells python to erase allthe data andwrite afresh in the file... so we append if we wannaadd data t the file

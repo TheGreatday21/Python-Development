@@ -1,6 +1,7 @@
 #2
 
 import char
+
 def count_character(s):
     char_count = {}
     for char in s:

@@ -5,7 +5,7 @@ forw=1
 for i in range(250):
     forward(forw)
     color("green")
-    left(120*23)
+    left(120*3)
     forw+=1
     forward(forw)
     color("greenyellow")

@@ -13,7 +13,7 @@ print(f"average is  : {average}")
 grades = []
 
 for i in range(4):
-    grade = int(input("Score: "))
+    grade = int(input("Score : "))
     grades.append(grade)
 
 

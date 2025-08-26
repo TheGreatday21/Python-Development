@@ -3,9 +3,9 @@ from enum import Enum
 #creating a class that inherits from enum
 #Enum is used with a fixed set of options e.g a lamp only has an on and off state
 class Color(Enum):
-    RED : str = 'R'
-    GREEN :str = 'G'
-    BLACK :str = 'B'
+    RED  = 'R'
+    GREEN  = 'G'
+    BLACK  = 'B'
 '''  
 print(Color('R'))
 print(Color.RED)
