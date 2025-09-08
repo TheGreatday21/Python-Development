@@ -25,7 +25,7 @@ def is_even(number):
     #return True if number % 2 == 0 else False >
     
     #The most logical way to do this is 
-    return number % 2 == 0 #the question it self has a true or false answer so you dont need to ask the question again 
+    #return number % 2 == 0 #the question it self has a true or false answer so you dont need to ask the question again 
 
 
 main()

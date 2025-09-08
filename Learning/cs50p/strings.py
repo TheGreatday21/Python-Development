@@ -7,10 +7,10 @@ name= name.strip()
 """
 Whats your name ?      dslhsdlahgddsahgdw
 dslhsdlahgddsahgdw
-
 """
+#the initialised white space from the user in the terminal is removed
 
-#this function capitalises only the first words first letter in a sentence 
+#this function capitalises only the first letter  of the first word in a sentence 
 caps = name.capitalize()
 """
 Whats your name ? elijah the great
@@ -30,7 +30,7 @@ Elijah The Great
 #name = input("Whats your name: ").strip().title()
 
 #the split function takes args of what it starts splitting at and can assign the split values to variables on assignment as shown below 
-first, last = name.split(" ") #when it sees blank space it will split into first and last respectively 
+first, last = name.split(" ") #when it sees blank space it will split the words at that point and place them into first and last respectively 
 
 
 one = name[:3] #this takes the values from index 0 to 3 of the array ccontaining the string 

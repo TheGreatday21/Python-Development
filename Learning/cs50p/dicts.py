@@ -32,7 +32,7 @@ students = [
     {"name":"Hermione", "house":"Gryfindoor", "patronus": "Otter"},
     {"name":"Ron", "house":"Gryfindoor", "patronus": "Jack russel carrier"},
     {"name":"Harry", "house":"Gryfindoor", "patronus": "Stag"},
-    {"name":"Draco", "house":"Slytherine", "patronus": None}, #here we use the key word none to indicate that this hass no value at the end of  it 
+    {"name":"Draco", "house":"Slytherine", "patronus": None}, #here we use the key word none to indicate that this has no value at the end of  it 
 ]
 
 #here using indexes we print all the values associated with the keys in the dictionary respective to each student in the dictionary 

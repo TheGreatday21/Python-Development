@@ -2,9 +2,9 @@
 
 #libraries in python are called "modules" 
 
-#the most common modules are 
+#one of the most common modules is 
 '''
-random - for generating a random number 
+random - for generating a random sequences or numbers
 docs.python.prg/3/library/random.html
 '''
 
@@ -12,7 +12,7 @@ docs.python.prg/3/library/random.html
 # import random 
 
 # numbers = [3,5,2,1,6,9]
-# random.choice(seq)#seq here is something like a list 
+# random.choice(seq)#seq(sequence) here is something like a list 
 
 
 import random 
@@ -21,7 +21,7 @@ coin = random.choice(["heads","tails"]) #random.choice is a function that takes 
 print(coin)
 
 
-#when we want to import specific functions from a module we use the key word "from".The import brinds in everything from the module without specifying 
+#when we want to import specific functions from a module we use the key word "from".The import brings in everything from the module without specifying 
 #so the improved statement will be 
 from random import choice
 

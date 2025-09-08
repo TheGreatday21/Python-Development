@@ -5,7 +5,7 @@ print("hello world)
 
 This dishes out a "syntax error" in the terminal - an error that involves wrong text input 
 
-Another error is a runtime error mainly got when we get input from a user and they input somthing we didnot expect them to put in ; Like if we ask for an integer and they input a string 
+Another error is a runtime error mainly got when we get input from a user and they input something we didnot expect them to put in ; Like if we ask for an integer and they input a string 
 
 '''
 '''
@@ -19,13 +19,13 @@ Traceback (most recent call last):
 ValueError: invalid literal for int() with base 10: 'rer'
 
 We get a value error here , cause the user input a string instead of an integer . We would get the same thing even with a decimal and boolean value 
-
+since x only takes in int values 
 '''
 #the best way to catch errors in python is using the try and except clause 
-try:
+try: #try out this code - direct translation literally 
     x = int(input("What's x:"))
     print(f"x is {x}")
-except ValueError:
+except ValueError: #except if you get a value error print out these lines 
     print("You have to input an integer")
 
 #there is a way to catch all the errors at once but it is bad practice to handle all of them in one go rather discover the errors and handle them as above 
@@ -39,8 +39,6 @@ except ValueError:
 print(f"x is {x}")
 
 What's x:re
-You have to input an integer
-What's x:re
 X must be an integer
 Traceback (most recent call last):
   File "D:\Elijah\languages_practice\Python\Learning\cs50p\exceptions.py", line 38, in <module>
@@ -49,7 +47,7 @@ Traceback (most recent call last):
 NameError: name 'x' is not defined
 
 '''
-#to fix the above error, we use an else statement with the try vlause
+#to fix the above error, we use an else statement with the try clause
 try:
     x = int(input("What's x:"))
 except ValueError:
@@ -59,9 +57,8 @@ else: #this code will only be run if you try above and succeed but if you donot 
 
 #we got the name error because after solving the ValueError we just print but now x has no valid value hence the error pops up 
 
+
 #to make this better we can use a loop to run it
-
-
 while True:
     try:
         x = int(input("What's x:"))
