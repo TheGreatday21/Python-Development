@@ -38,7 +38,7 @@ class Banking:#creating a class with its methods to handle the operations
         if self.transactions:
             print(f"These are the transactions for {self.name}")
             for trans in self.transactions:
-                print(trans, end="***")
+                print(trans, end=" || ")
         else:
             print("You havent done any transactions yet")
             
@@ -52,12 +52,12 @@ class Banking:#creating a class with its methods to handle the operations
             interest = self.balance * (rate/100) #dividing the rate by 100 since its a percentage rate 
             self.balance += interest #the balance will increase by the interest
             self.transactions.append(f"You have recieved a {rate}% interest rate,your interest is {interest} and your current balance is {self.balance}")
-            print(f"Account {self.account_number} under {self.name} recieved an interest of {interest} at rate{self.rate}.  New account balance is {self.balance}")
+            print(f"Account {self.account_number} recieved an interest of {interest} at rate {self.rate}%.  New account balance is {self.balance}")
 
 
 
 bank_accounts = {}#creating an empty dictionary to store all the accouts
-#bank_accounts_names = {}#creating a dictionary for all the account holders names 
+
 
 #function to create an account 
 def create_account(): 
@@ -69,7 +69,7 @@ def create_account():
                 print("Account number already exists! Try a different number.")
                 continue
             bank_accounts[userAccountNum] = Banking(userName, userAccountNum)
-            #bank_accounts_names[userAccountNum] = userName #using the account num as the key and name as the value 
+            
             print(f"Account created successfully for {userName} with account number {userAccountNum}")
             break
         except (ValueError, TypeError):
@@ -172,7 +172,7 @@ def transfer():
             # ensuring that this transaction is tracked 
             from_account.transactions.append( f"Transferred {amount} to account {minor_acc_num}. New balance: {from_account.balance}")#in main accounts transaction history list, the transaction has been added
             to_account.transactions.append(f"Received {amount} from account {main_acc_num}. New balance: {to_account.balance}")
-            print(f"Successfully transferred {amount} from {main_acc_num} to {minor_acc_num}.")
+            print(f"Successfully transferred {amount} from account  {main_acc_num}  to  account {minor_acc_num}.")
         
         else:
             print("Insufficient funds for transfer.")
