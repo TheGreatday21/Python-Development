@@ -56,8 +56,6 @@ class Banking:#creating a class with its methods to handle the operations
 
 
 
-
-
 bank_accounts = {}#creating an empty dictionary to store all the accouts
 #bank_accounts_names = {}#creating a dictionary for all the account holders names 
 
@@ -142,6 +140,46 @@ def interest():
     except ValueError: #any input thats not integer or float will be captured here
         print("Invalid input. Account number must be numbers.")
 
+#creating a function to enable transfering funds from one account to another 
+def transfer():
+    try:
+        main_acc_num = int(input("Source Account Number: "))
+        from_account = bank_accounts.get(main_acc_num) #checking our dictionary to see if the main account number is there 
+        if not from_account:
+            print("Main account not found.")
+            return#exiting if the account is not found 
+
+        minor_acc_num = int(input("Destination Account Number: "))
+        to_account = bank_accounts.get(minor_acc_num)
+        if not to_account:
+            print("Destination account was  not found.")
+            return
+                        ###Error handling 
+        if main_acc_num == minor_acc_num:
+            print("You cannot transfer funds to the same account.")
+            return
+
+        amount = float(input("Amount to transfer: "))#creating a variable amount to store the amount of money one will be transfering between accounts 
+        if amount <= 0:
+            print("Transfer amount must be positive and greater than zero ")
+            return
+
+        if from_account.balance >= amount:#accesing the objects balance attribute from class and making sure its not less than the amount one wants to transfer 
+            
+            from_account.balance -= amount #reducing from the main account 
+            to_account.balance += amount #editing the minor accounts balance 
+
+            # ensuring that this transaction is tracked 
+            from_account.transactions.append( f"Transferred {amount} to account {minor_acc_num}. New balance: {from_account.balance}")#in main accounts transaction history list, the transaction has been added
+            to_account.transactions.append(f"Received {amount} from account {main_acc_num}. New balance: {to_account.balance}")
+            print(f"Successfully transferred {amount} from {main_acc_num} to {minor_acc_num}.")
+        
+        else:
+            print("Insufficient funds for transfer.")
+
+    except ValueError:
+        print("Invalid input. Account numbers and amount must be numbers.")
+
 
 def main():
     while True:
@@ -152,7 +190,8 @@ def main():
         print("4. Transfer to other account")
         print("5. Check balance")
         print("6. Transaction History")
-        print("7. Exit")
+        print("7. Interest ")
+        print("8. Exit")
         while True:
             try:
                 userInput = int(input("\n Chose an operation: "))
@@ -166,14 +205,16 @@ def main():
         elif userInput == 2:
             deposit_money()
         elif userInput == 3:
-            pass
+            withdraw()
         elif userInput == 4:
-            pass
+            transfer()
         elif userInput == 5:
             check_balance()
         elif userInput == 6:
             transaction_history()
         elif userInput == 7:
+            interest()
+        elif userInput == 8:
             sys.exit()
         else:
             print("Ïnvalid option ")
