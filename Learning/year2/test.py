@@ -1,12 +1,15 @@
-letters = "aAbByYzZ"
-# Demonstrating min() - Example 1:
-print(min("aAbByYzZ"))
+##Closures - Functions that remember where they are from 
+def my_fun(name):
+    def my_fun_2(okay):
+        return f"Hey there {name} i hope you have a good {okay}"
+    return my_fun_2
+my_fun
 
-print(ord(min(letters)))#the ord function gives you the ascii equivalent of the minimum letter in the letters variable \
-    
-# Demonstrating min() - Examples 2 & 3:
-t = 'The Knights Who Say "Ni!"'
-print('[' + min(t) + ']')
 
-t = [0, 1, 2]
-print(min(t))
+stu_1 = my_fun("Elijah")
+stu_2 = my_fun("James")
+
+print(my_fun("time"))
+print(my_fun("day"))
+
+
