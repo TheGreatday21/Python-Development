@@ -12,5 +12,4 @@ order = input("What would you like to order: Enter your choices (1-6)")
 
 #print the order and show the bill
 if order == "1":
-elif :
-elif :
+    ...
