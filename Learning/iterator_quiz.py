@@ -23,12 +23,12 @@ my_sentence = sentence('This is a test')
 for word in my_sentence:
     print(word,end='\n')
 
-'''
+
 
 #using a class
 class Sentence:
     def __init__(self,sentence):
-        self.sentence = sentence #creating a class attribute for the variable 
+        self.sentence = sentence #creating a instance attribute 
         self.index = 0 #this helps us keep track of where we are when iterating 
         self.words = self.sentence#this attribute contains all the individual strings in the sentence 
 
@@ -46,7 +46,7 @@ my_sentence = Sentence('I love to eat rice and matooke')
 for word in my_sentence:
     print(word,end=" ")
 
-'''
+
 
 
 

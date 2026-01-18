@@ -1,77 +1,29 @@
-##A list of dictionaries containing student details 
-student_list = [
-    {"student_id":1,"name":"Kapeka","age":23,"course":"Bcom"}
-] 
 
-##function to handle addition of new students 
+
 def add_student(student_list,student_id,name,age,course):
-    for student in student_list:
-        if student_id != student['student_id']:
-            student_list.append({
-                'student_id' : student_id,
-                'name': name, 
-                'age':age, 
-                'course': course
+    for students in student_list: #each student is a dictionary
+        for student in students:
+            if student_id != student['student_id']:
+                student_list.append({
+                    'student_id':student_id,
+                    'name':name,
+                    'age':age,
+                    'course':course
                 })
-
-            print("Student successfully registered .... WELCOME \n")
-           
-        else:
-             print("This student already exists in the school databases")
-            
-def find_student_by_id(student_list,student_id):
-    for student in student_list:
-        if student_id == student['student_id']:
-            print(f"student name : {student['name']}, student age :{student['age']}, student course : {student['course']} ",sep= "   ")
+            else:
+                print("This student most likely already exists in our database sorry")
 
 def main():
-    
+    student_list =  []
 
-    student1 = add_student(student_list,2,"Kalyango",23,"LLB")
-        
+    add_student(student_list,1,"Jane",21,"BSDS")
+    add_student(student_list,2,"Charlotte",24,"BSDS")
+    add_student(student_list,3,"Simon",21,"BSCS")
+
     print(student_list)
 
-if __name__ == "__main__":
+if __name__ == "__main__6t ":
     main()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
